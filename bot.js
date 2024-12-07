@@ -16,6 +16,5 @@ bot.on('message', async (msg) => {
 
   const result = await model.generateContent(messageText);
   const response = await result.response;
-  bot.sendMessage(chatId, response.text())
-
+  bot.sendMessage(chatId, response.text());
 });
